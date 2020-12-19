@@ -1,6 +1,15 @@
+body {
+    background-color: rgb(0, 0, 0);
+}
+
 .header {
-    background-color: cornflowerblue;
+    background-color: rgb(18, 18, 18);
+    height: 50px;
     position: fixed;
     top: 0;
     width: 100%;
+}
+
+.header a {
+    text-decoration: none;
 }
