@@ -1,0 +1,44 @@
+body {
+    background-color: #ffffff;
+    font-family: Arial;
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    height: auto;
+    width: 100%;
+}
+
+.header {
+    background: #ededed;
+    display: flex;
+    flex-direction: row;
+    font-size: 15px;
+    padding: 10px;
+}
+
+.header a {
+    color: #121212;
+    display: block;
+    padding: 15px;
+    text-decoration: none;
+}
+
+.header a:hover {
+    text-decoration: underline;
+}
+
+.item-info-container {
+    margin: 20px;
+    width: 300px;
+}
+
+.item-logo-container {
+    margin: 20px;
+    width: 100px;
+}
+
+.main {
+    width: 500px;
+}
