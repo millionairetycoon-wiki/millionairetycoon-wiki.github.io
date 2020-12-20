@@ -35,10 +35,13 @@ img {
 }
 
 .item-logo-container {
-    margin: 20px;
-    width: 100px;
+    margin: 10px;
+    max-width: 125px;
+    min-width: 75px;
 }
 
 .main {
-    width: 500px;
+    display: flex;
+    flex-flow: row wrap;
+    margin: 10px;
 }
