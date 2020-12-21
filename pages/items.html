@@ -8,90 +8,164 @@
     </head>
     <body>
         <div class="header">
-            <a href="items.html">items</a>
-            <a href="properties.html">properties</a>
+            <a href="items.html">Items</a>
+            <a href="properties.html">Properties</a>
+        </div>
+        <div id="button-container">
+            <button class="button active" onclick="filterSelection('all')"> All</button>
+            <button class="button" onclick="filterSelection('common')"> Common</button>
+            <button class="button" onclick="filterSelection('epic')"> Epic</button>
         </div>
         <div class="main">
-            <div class="item-logo-container">
+            <div class="item common">
                 <a href="items/banana.html">
                     <img src="../images/items/banana/item-banana.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item common">
                 <a href="items/bike.html">
                     <img src="../images/items/bike/item-bike.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/bin.html">
                     <img src="../images/items/bin/item-bin.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/book.html">
                     <img src="../images/items/book/item-book.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/bowl.html">
                     <img src="../images/items/bowl/item-bowl.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/broom.html">
                     <img src="../images/items/broom/item-broom.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item common">
                 <a href="items/calculator.html">
                     <img src="../images/items/calculator/item-calculator.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/candy.html">
                     <img src="../images/items/candy/item-candy.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/clock.html">
                     <img src="../images/items/clock/item-clock.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/clothes_hanger.html">
                     <img src="../images/items/clothes_hanger/item-clothes_hanger.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/cola.html">
                     <img src="../images/items/cola/item-cola.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/comfy_chair.html">
                     <img src="../images/items/comfy_chair/item-comfy_chair.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/cup_noodles.html">
                     <img src="../images/items/cup_noodles/item-cup_noodles.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/dirty_toilet.html">
                     <img src="../images/items/dirty_toilet/item-dirty_toilet.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/glasses.html">
                     <img src="../images/items/glasses/item-glasses.png">
                 </a>
             </div>
-            <div class="item-logo-container">
+            <div class="item">
                 <a href="items/icepack.html">
                     <img src="../images/items/icepack/item-icepack.png">
                 </a>
             </div>
+            <div class="item epic">
+                <a href="items/glass_jar.html">
+                    <img src="../images/items/glass_jar/item-glass_jar.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="items/kids_painting.html">
+                    <img src="../images/items/kids_painting/item-kids_painting.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="items/lightbulb.html">
+                    <img src="../images/items/lightbulb/item-lightbulb.png">
+                </a>
+            </div>
+            <div class="item">
+                <a href="items/lollipop.html">
+                    <img src="../images/items/lollipop/item-lollipop.png">
+                </a>
+            </div>
+            <div class="item epic">
+                <a href="items/sword.html">
+                    <img src="../images/items/sword/item-sword.png">
+                </a>
+            </div>
         </div>
+        <script>
+            filterSelection("all")
+            function filterSelection(c) {
+              var x, i;
+              x = document.getElementsByClassName("item");
+              if (c == "all") c = "";
+              for (i = 0; i < x.length; i++) {
+                w3RemoveClass(x[i], "show");
+                if (x[i].className.indexOf(c) > -1) w3AddClass(x[i], "show");
+              }
+            }
+            
+            function w3AddClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                if (arr1.indexOf(arr2[i]) == -1) {element.className += " " + arr2[i];}
+              }
+            }
+            
+            function w3RemoveClass(element, name) {
+              var i, arr1, arr2;
+              arr1 = element.className.split(" ");
+              arr2 = name.split(" ");
+              for (i = 0; i < arr2.length; i++) {
+                while (arr1.indexOf(arr2[i]) > -1) {
+                  arr1.splice(arr1.indexOf(arr2[i]), 1);     
+                }
+              }
+              element.className = arr1.join(" ");
+            }
+            
+            // Add active class to the current button (highlight it)
+            var btnContainer = document.getElementById("button-container");
+            var btns = btnContainer.getElementsByClassName("button");
+            for (var i = 0; i < btns.length; i++) {
+              btns[i].addEventListener("click", function(){
+                var current = document.getElementsByClassName("active");
+                current[0].className = current[0].className.replace(" active", "");
+                this.className += " active";
+              });
+            }
+            </script>
     </body>
 </html>
