@@ -36,8 +36,8 @@ img {
 
 .item-logo-container {
     margin: 10px;
-    max-width: 100px;
-    min-width: 75px;
+    max-width: 75px;
+    min-width: 50px;
 }
 
 .main {
