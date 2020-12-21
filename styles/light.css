@@ -35,7 +35,7 @@ img {
 }
 
 .item {
-    display: none;
+    display: block; /*->none,zum bearbeiten block*/
     margin: 10px;
     max-width: 75px;
     min-width: 50px;
