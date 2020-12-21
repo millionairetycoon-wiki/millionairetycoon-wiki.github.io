@@ -41,6 +41,12 @@ img {
     min-width: 50px;
 }
 
+.property {
+    display: block;
+    margin: 10px;
+    width: 150px;
+}
+
 .main {
     display: flex;
     flex-flow: row wrap;
