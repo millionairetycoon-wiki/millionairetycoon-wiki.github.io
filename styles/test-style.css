@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+}
+
+.header {
+    background-color: #ffffff;
+    color: #000000;
+    padding: 20px;
+    text-align: center;
+}
+
+.header h1 {
+    font-size: 40px;
+}
+
+.navigation {
+    background-color: #cccccc;
+    overflow: hidden;
+    position: sticky;
+    position: -webkit-sticky;
+    top: 0;
+}
+
+.navigation a {
+    color: #000000;
+    display: block;
+    float: left;
+    padding: 15px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+
+.navigation a.active {
+    background-color: #333333;
+    color: #ffffff;
+}
+
+.navigation a:hover {
+    background-color: #999999;
+    color: #000000;
+}
