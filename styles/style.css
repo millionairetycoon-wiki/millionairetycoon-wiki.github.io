@@ -10,13 +10,7 @@ body {
     display: block;
     position: relative;
     width: 100%;
-    /*align-items: center;
-    background-color: #2e2e2e;
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-start;
-    position: fixed;
-    width: 100%;*/
+    /*position: fixed;*/
 }
 
 .dropdown-button {
@@ -37,7 +31,11 @@ body {
     overflow: auto;
     box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
     z-index: 1;
-  }
+}
+
+.show {
+    display: block;
+}
 
 .dropdown-content a {
     align-items: center;
@@ -57,8 +55,4 @@ body {
 
 span {
     font-size: 16px;
-}
-
-.show {
-    display: block;
 }
