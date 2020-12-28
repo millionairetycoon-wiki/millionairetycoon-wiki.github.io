@@ -17,7 +17,7 @@ body {
 
 .dropdown-button {
     background-color: #2e2e2e;
-    border: 1px solid green;
+    border: none;
     color: #ffffff;
     cursor: pointer;
     display: inline-block;
