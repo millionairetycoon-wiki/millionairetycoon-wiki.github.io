@@ -71,21 +71,21 @@ span {
 /* Tips */
 
 .main-container {
-    margin: 16px;
-    width: 100%;
+    display: block;
+    padding: 16px;
 }
 
 .main-element {
     background-color: #1e1e1e;
+    display: block;
+    margin-bottom: 16px;
     padding: 16px;
-    width: 100%;
 }
 
 .main-title {
     color: #ffffff;
     display: block;
     font-size: 24px;
-    text-transform: uppercase;
 }
 
 .main-text {
