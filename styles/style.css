@@ -13,11 +13,20 @@ body {
     /*position: fixed;*/
 }
 
+/*.dropdown-navigation span {
+    align-items: center;
+    display: flex;
+    line-height: 50px;
+    justify-content: center;
+    width: 50px;
+}*/
+
 .dropdown-button {
     background-color: #2e2e2e;
     border: none;
     color: #ffffff;
     cursor: pointer;
+    display: inline-block;
     font-size: 16px;
     padding: 16px;
 }
@@ -54,5 +63,31 @@ body {
 }
 
 span {
+    font-size: 16px;
+}
+
+
+
+/* Tips */
+
+.main-container {
+    margin: 16px;
+    width: 100%;
+}
+
+.main-element {
+    background-color: #1e1e1e;
+    padding: 16px;
+    width: 100%;
+}
+
+.main-title {
+    display: block;
+    font-size: 24px;
+    text-transform: uppercase;
+}
+
+.main-text {
+    display: block;
     font-size: 16px;
 }
