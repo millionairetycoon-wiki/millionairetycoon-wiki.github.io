@@ -32,33 +32,16 @@
                     <span>Tips</span>
                 </a>
             </div>
-            <!--<div class="element">
+            <!--
+            <i class="dropdown-button material-icons right" onclick="dropdownFunction()">more_vert</i>
+            <div class="dropdown-content right" id="dropdown-content">
                 <a href="#">
                     <i class="material-icons">light_mode</i>
-                    <span>&nbsp;Light</span>
+                    <span>Light</span>
                 </a>
-            </div>-->
+            </div>
+            -->
         </div>
-        <script>
-            /* When the user clicks on the button, 
-            toggle between hiding and showing the dropdown content */
-            function dropdownFunction() {
-              document.getElementById("dropdown-content").classList.toggle("show");
-            }
-            
-            // Close the dropdown if the user clicks outside of it
-            window.onclick = function(event) {
-              if (!event.target.matches('.dropdown-button')) {
-                var dropdowns = document.getElementsByClassName("dropdown-content");
-                var i;
-                for (i = 0; i < dropdowns.length; i++) {
-                  var openDropdown = dropdowns[i];
-                  if (openDropdown.classList.contains('show')) {
-                    openDropdown.classList.remove('show');
-                  }
-                }
-              }
-            }
-            </script>
+        <script src="scripts/dropdown-menu.js"></script>
     </body>
 </html>
