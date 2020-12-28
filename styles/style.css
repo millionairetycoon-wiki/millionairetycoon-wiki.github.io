@@ -82,12 +82,14 @@ span {
 }
 
 .main-title {
+    color: #ffffff;
     display: block;
     font-size: 24px;
     text-transform: uppercase;
 }
 
 .main-text {
+    color: #ffffff;
     display: block;
     font-size: 16px;
 }
