@@ -48,7 +48,7 @@ body {
 
 .dropdown-content-left {
     background-color: #3e3e3e;
-    display: block;
+    display: none;
     left: 16px;
     min-width: 160px;
     overflow: auto;
@@ -101,7 +101,7 @@ body {
 
 .dropdown-content-right {
     background-color: #3e3e3e;
-    display: block;
+    display: none;
     min-width: 160px;
     overflow: auto;
     position: absolute;
