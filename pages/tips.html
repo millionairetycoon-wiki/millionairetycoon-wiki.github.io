@@ -3,19 +3,23 @@
     <!-- Head -->
     <head>
         <title>MillionaireTycoon-Wiki</title>
-        <meta charset="UTF-8">
+        <meta charset="utf-8">
+        <meta name="theme-color" content="#121212">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="stylesheet" href="../styles/style.css">
-        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
         <link rel="preconnect" href="https://fonts.gstatic.com">
-        <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+        <!-- Stylesheets -->
+        <link rel="stylesheet" href="../styles/style.css">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto&display=swap"> <!-- Google Fonts -->
+        <link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons"> <!-- Material Icons -->
+        <!-- Scripts -->
+        <script src="../scripts/dropdown.js"></script>
     </head>
     <!-- Body -->
     <body>
         <div class="dropdown-navigation">
-            <button class="dropdown-button material-icons " onclick="dropdown_left_Function()">menu</button>
+            <button onclick="dropdownFunction()" class="dropdown-button material-icons">menu</button>
             <span class="dropdown-title">Tips</span>
-            <div class="dropdown-content-left" id="dropdown-content">
+            <div id="dropdown-menu" class="dropdown-content">
                 <a href="../index.html">
                     <i class="material-icons">home</i>
                     <span>Home</span>
@@ -33,14 +37,14 @@
                     <span>Tips</span>
                 </a>
             </div>
-            <button class="dropdown-button-right material-icons" onclick="dropdown_right_Function()">more_vert</button>
-            <div class="dropdown-content-right" id="dropdown-content">
+        </div>
+        <!-- <button class="dropdown-button-right material-icons">more_vert</button>
+            <div class="dropdown-content-right">
                 <a href="#">
                     <i class="material-icons">light_mode</i>
                     <span>Light</span>
                 </a>
-            </div>
-        </div>
+            </div>-->
         <div class="main-container">
             <div class="main-element">
                 <span class="main-title">How can I increase my advertising revenue?</span>
@@ -51,7 +55,6 @@
                 <span class="main-text">- you can only watch 20 advertisements a day</span>
             </div>
         </div>
-        <script src="../scripts/dropdown-menu-left.js"></script>
-        <script src="../scripts/dropdown-menu-right.js"></script>
+        <!-- Distance Duty, Battery... -->
     </body>
 </html>
